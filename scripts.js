@@ -21,7 +21,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
     files.forEach(file => {
         const listItem = document.createElement('li');
-        listItem.textContent = `${file.name} - ${file.size}`;
+        const img = document.createElement('img');
+        img.src = `SVGraphs/${file.name}`;
+        img.alt = file.name;
+        img.title = `${file.name} - ${file.size}`;
+        listItem.appendChild(img);
+
         if (file.name.startsWith('top_10_')) {
             top10List.appendChild(listItem);
         } else if (file.name.startsWith('avg_')) {

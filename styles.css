@@ -43,3 +43,19 @@ footer {
     bottom: 0;
     width: 100%;
 }
+
+/* Center images and remove list-style */
+ul {
+    list-style-type: none;
+    /* Remove the dot before the images */
+    padding: 0;
+}
+
+ul li {
+    text-align: center;
+}
+
+ul li img {
+    display: block;
+    margin: 0 auto;
+}
