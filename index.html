@@ -3,41 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pokemon Database Graphs</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            margin: 0;
-            padding: 0;
-        }
-        .graph-container {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            margin-top: 20px;
-        }
-        .graph {
-            margin: 10px;
-            border: 1px solid #ccc;
-            padding: 10px;
-            width: 300px;
-            height: 300px;
-        }
-    </style>
+    <title>SVGraphs File Visualizer</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Pokemon Database Graphs</h1>
-    <div class="graph-container">
-        <div class="graph">
-            <h2>Graph 1</h2>
-            <img src="path/to/your/graph1.svg" alt="Graph 1">
-        </div>
-        <div class="graph">
-            <h2>Graph 2</h2>
-            <img src="path/to/your/graph2.svg" alt="Graph 2">
-        </div>
-        <!-- Add more graphs as needed -->
-    </div>
+    <header>
+        <h1>SVGraphs File Visualizer</h1>
+    </header>
+    <main>
+        <section id="top10">
+            <h2>Top 10 Files</h2>
+            <ul id="top10-list"></ul>
+        </section>
+        <section id="avg">
+            <h2>Average Files</h2>
+            <ul id="avg-list"></ul>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 SVGraphs Visualizer</p>
+    </footer>
+    <script src="script.js"></script>
 </body>
 </html>
